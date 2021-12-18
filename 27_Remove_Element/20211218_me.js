@@ -12,3 +12,8 @@ var removeElement = function (nums, val) {
 };
 
 console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2));
+
+/**
+ * Runtime: 72 ms, faster than 80.38% of JavaScript online submissions for Remove Element.
+ * Memory Usage: 38.9 MB, less than 49.73% of JavaScript online submissions for Remove Element.
+ */
