@@ -18,3 +18,8 @@ const removeDuplicates = function (nums) {
 };
 
 console.log(removeDuplicates([1, 1, 2]));
+
+/**
+ * Runtime: 152 ms, faster than 23.56% of JavaScript online submissions for Remove Duplicates from Sorted Array.
+ * Memory Usage: 43.2 MB, less than 7.61% of JavaScript online submissions for Remove Duplicates from Sorted Array.
+ */
