@@ -1,4 +1,9 @@
 /**
+ * https://www.youtube.com/watch?v=NRfHktxtcmA
+ * Youtube 솔루션
+ */
+
+/**
  * @param {string} haystack
  * @param {string} needle
  * @return {number}
