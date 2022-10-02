@@ -12,13 +12,7 @@ class LinkedList {
     }
 
     prepend(data) {
-        if (!this.head) { // 만약에 head가 없으면 
-            this.head = new Node(data); // data를 가진 새로운 node가 head가 된다.
-        } else {
-            const newHead = new Node(data) // 만약 head가 있으면 
-            newHead.next = this.head; // 새로운 node의 next가 기존의 head가 되고
-            this.head = newHead; // 새로운 head는 새로운 node가 된다. 
-        }
+        this.head = new Node(data, this.head);
         this.length++;
     }
 
