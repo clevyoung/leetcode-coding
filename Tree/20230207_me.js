@@ -54,8 +54,14 @@ class BST {
                 temp = temp.right
             }
         }
+    }
 
-        
+    minValueNode(currentNode) {
+        while (currentNode.left) {
+            currentNode = currentNode.left
+        }
+
+        return currentNode
     }
 }
 
