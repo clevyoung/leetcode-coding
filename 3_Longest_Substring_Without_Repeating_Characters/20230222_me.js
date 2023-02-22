@@ -11,7 +11,7 @@ var lengthOfLongestSubstring = function (s) {
     let longest = 0;
 
     while (windowEnd < s.length) {
-        if (seenChars[s[windowEnd]] && seenChars[s[windowEnd]] >= windowStart) {
+        if (seenChars[s[windowEnd]] >= windowStart) { // seenChars[s[windowEnd]]가 0일 때 false로 평가된다.
             longest = Math.max(longest, windowEnd-windowStart);
             windowStart = seenChars[s[windowEnd]] + 1;
         } else {
