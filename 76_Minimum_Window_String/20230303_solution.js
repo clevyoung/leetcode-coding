@@ -23,7 +23,8 @@ var minWindow = function (s, t) {
     while (right < s.length) {
         let rLetter = s[right];
         if (map.has(rLetter)) {
-            map.set((rLetter, map.get(rLetter)-1))
+            map.set(rLetter, map.get(rLetter) - 1)
+            if (map.get(rLetter) === 0) count--;
         }
 
         right++;
@@ -35,12 +36,12 @@ var minWindow = function (s, t) {
             }
 
             let lLetter = s[left];
-            if (map.has(letter)) {
+            if (map.has(lLetter)) {
                 map.set(lLetter, map.get(lLetter) + 1);
                 if (map.get(lLetter) > 0) count++;
             }
 
-            lLetter++
+            left++;
         }
 
     
